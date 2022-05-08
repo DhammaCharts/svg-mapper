@@ -36,7 +36,7 @@
                 useJsonP: false
             });
             map.addLayer(utfGrid);
-            var osmImagery = L.tileLayer("http://ihned-mapy.s3.amazonaws.com/desaturized/{z}/{x}/{y}.png", {opacity: 0.3, attribution: 'map data &copy; OpenStreetMap contributors, imagery <a target="_blank" href="http://ihned.cz">IHNED.cz</a>'}).addTo(map);
+            var osmImagery = L.tileLayer("https://ihned-mapy.s3.amazonaws.com/desaturized/{z}/{x}/{y}.png", {opacity: 0.3, attribution: 'map data &copy; OpenStreetMap contributors, imagery <a target="_blank" href="http://ihned.cz">IHNED.cz</a>'}).addTo(map);
             L.control.layers(null, {
                 "SVG Mapper output": svgMapper,
                 "OSM Imagery": osmImagery
