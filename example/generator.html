@@ -1,9 +1,10 @@
 <html>
     <head>
         <title>D3/GeoJSON generation example</title>
-        <link rel="stylesheet" type="text/css" href="http://service.ihned.cz/js/tooltip/v1.1.2.css" />
-        <script src="http://service.ihned.cz/js/d3/v3.3.2.min.js"></script>
-        <script src="http://service.ihned.cz/js/tooltip/v1.1.2.d3.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/tooltip/v1.1.2.css" />
+        <script src="js/d3/v3.3.2.min.js"></script>
+        <script src="js/tooltip/v1.1.2.d3.min.js"></script>
+        <script src="kraje.js"></script>
     </head>
     <body>
         <script type="text/javascript">
@@ -26,6 +27,8 @@
         };
         // set the initial width of the SVG, in pixels. The height will be scaled automatically
         var targetWidth = 600;
+
+        
 
         // load the geoJSON
         d3.json("./kraje.geojson", function(err, data) {
